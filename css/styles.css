@@ -1,5 +1,12 @@
-*{
-    font-family: Noto Sans;
+* {
+    font-family: Noto Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 .verde {
@@ -10,28 +17,96 @@
     color: #293651;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10vw;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #bcd1ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo h1{
+    font-size: 18px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar nav {
+    display: flex;
+    gap: 5px; /* Espacio entre los enlaces */
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a::before, .nav-bar a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    transition: width 0.3s;
+}
+
+.nav-bar a::before {
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-bar a::after {
+    bottom: -5px;
+    right: 0;
+    width: 10px;
+}
+
+.nav-bar a:hover::before, .nav-bar a:hover::after {
+    width: 10px;
+}
+
+.nav-bar a:hover::before {
+    width: 30px; /* Ajusta este valor según necesites */
 }
 
 .hero{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding-left: 20vw;
     padding-right: 20vw;
     padding-top: 10vh;
     background: rgb(255,255,255);
-    background: linear-gradient(45deg, rgba(255,255,255,1) 50%, rgba(1,167,142,1) 50%);
-}   
+    background: linear-gradient(60deg, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 56%, rgba(0,167,142,1) 56%);
+}  
+
+.hero-img{
+    display: flex ;
+    align-self: flex-end;
+
+}
 
 img{
+    display: flex ;
+    align-self: flex-end;
     width: 100%;
     height: auto;
 }
@@ -48,22 +123,47 @@ img{
     padding-right: 20vw;
     padding-top: 10vh;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
+.img-sobre-mi{
+    flex:1;
+}
+
+ .img-sobre-mi img{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+} 
+
+.main-sobre-mi {
+    flex: 1; /* El texto ocupará más espacio que la imagen */
+}
+
+.hero-sobre-mi{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .progress-bar {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre cada barra de progreso */
+    gap: 2px; /* Espacio entre cada barra de progreso */
 }
 
 .progress-bar label {
     font-weight: bold;
-    margin-bottom: 5px; /* Espacio entre el label y la barra de progreso */
+    font-size: x-small;
+    margin-bottom: 0px; /* Espacio entre el label y la barra de progreso */
 }
 
 progress {
     width: 100%; /* Ajustar al ancho del contenedor */
-    height: 20px; /* Ajusta la altura de la barra de progreso */
+    height: 10px; /* Ajusta la altura de la barra de progreso */
     appearance: none; /* Elimina los estilos por defecto del navegador */
 }
 
@@ -73,24 +173,18 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: #4caf50; /* Color verde para el valor de la barra */
+    background-color: #01a78e; /* Color verde para el valor de la barra */
     border-radius: 5px; /* Bordes redondeados */
 }
 
 progress::-moz-progress-bar {
-    background-color: #4caf50; /* Color verde para el valor de la barra en Firefox */
+    background-color: #01a78e; /* Color verde para el valor de la barra en Firefox */
     border-radius: 5px; /* Bordes redondeados */
 }
 
-/* Opcional: Estilo para el contenedor */
-.progress-bar {
-    max-width: 600px; /* Ajusta el tamaño máximo del contenedor */
-    margin: 20px auto; /* Centra el contenedor horizontalmente */
-    padding: 10px;
-    border: 1px solid #ccc; /* Borde alrededor del contenedor */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Fondo del contenedor */
-}
+
+
+
 
 .servicios{
     padding-left: 20vw;
@@ -147,10 +241,10 @@ progress::-moz-progress-bar {
     top: 0;
 }
 .line::before {
-    left: -18px;
+    left: -25px;
 }
 .line::after {
-    right: -18px;
+    right: -25px;
 }
 
 .portfolio{
