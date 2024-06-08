@@ -24,7 +24,7 @@ header {
     position: fixed; 
     top: 0;
     width: 100%;
-    padding: 5px 20px;
+    padding: 5px 10px;
     background-color: #bcd1ff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     z-index: 1000;
@@ -86,6 +86,8 @@ header {
     width: 30px; /* Ajusta este valor según necesites */
 }
 
+/* Seccion Inicio / Hero */
+
 .hero{
     display: flex;
     flex-direction: row;
@@ -98,10 +100,17 @@ header {
     background: linear-gradient(60deg, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 56%, rgba(0,167,142,1) 56%);
 }  
 
+
 .hero-img{
     display: flex ;
     align-self: flex-end;
 
+}
+
+.hero-content p{
+    font-size: small;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 img{
@@ -110,14 +119,27 @@ img{
     width: 100%;
     height: auto;
 }
-.boton-1{
+.boton-1 {
     background-color: #01a78e;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.boton-1:hover {
+    background-color: #028a6f; /* Cambia a un tono más oscuro de verde */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+.boton-1:active {
+    background-color: #026857; /* Cambia a un tono aún más oscuro de verde cuando el botón está activo */
+    transform: scale(0.98); /* Reduce ligeramente el tamaño del botón al hacer clic */
+}
+
+
+/* Seccion de sobre mi */
 .sobre-mi{
     padding-left: 20vw;
     padding-right: 20vw;
@@ -126,13 +148,13 @@ img{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
-.img-sobre-mi{
-    flex:1;
-}
 
- .img-sobre-mi img{
+
+
+.img-sobre-mi img{
     width: 100%;
     height: auto;
     max-width: 300px;
@@ -140,19 +162,24 @@ img{
 
 .main-sobre-mi {
     flex: 1; /* El texto ocupará más espacio que la imagen */
+    margin-left: 40px;
 }
 
-.hero-sobre-mi{
-    display: flex;
-    flex-direction: column;
+.texto-sobre-mi h2{
+    color: 293651;
+    margin-bottom: 10px;
 }
-
+.texto-sobre-mi p{
+    font-size: small;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 
 
 .progress-bar {
     display: flex;
     flex-direction: column;
-    gap: 2px; /* Espacio entre cada barra de progreso */
+    gap: 3px; /* Espacio entre cada barra de progreso */
 }
 
 .progress-bar label {
@@ -182,56 +209,86 @@ progress::-moz-progress-bar {
     border-radius: 5px; /* Bordes redondeados */
 }
 
-
-
-
-
-.servicios{
+/* Seccion de servicios */
+.servicios {
     padding-left: 20vw;
     padding-right: 20vw;
     padding-top: 10vh;
+    padding-bottom: 10vh;
     background-color: #ffffff;
     text-align: center;
-    
 }
 
-.contenedor-servicios{
+.servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #293651;
+}
+
+.servicios h4 {
+    color: #01a78e;
+}
+
+.contenedor-servicios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-.caja-servicio{
-    width: 200px;
-    height: 150px;
-    padding: 10px;
-    margin: 10px;
+.caja-servicio {
+    width: 250px;
+    padding: 20px;
     background-color: #ffffff;
     color: #141414;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    font-size: 11px;
-    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    text-align: left;
 }
 
-.icono-servicio{
+.caja-servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #01a78e;
+    color: #ffffff;
+}
+
+.caja-servicio:hover .icono-servicio {
+    background-color: #ffffff;
+    color: #01a78e;
+}
+
+.caja-servicio h3 {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+
+.caja-servicio p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.icono-servicio {
     color: #ffffff;
     font-size: 35px;
     background-color: #01a78e;
     padding: 10px;
-    border-radius: 20px 20px 0px 20px ;
+    border-radius: 30% 30% 0% 30%;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-
 
 .line {
     width: 60px;
     height: 2px;
     background-color: #28a197;
-    margin: 0.5rem auto;
+    margin: 0.4rem auto;
     position: relative;
 }
+
 .line::before, .line::after {
     content: "";
     width: 15px;
@@ -240,9 +297,11 @@ progress::-moz-progress-bar {
     position: absolute;
     top: 0;
 }
+
 .line::before {
     left: -25px;
 }
+
 .line::after {
     right: -25px;
 }
