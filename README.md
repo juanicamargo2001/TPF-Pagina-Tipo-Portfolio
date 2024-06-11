@@ -1,6 +1,7 @@
 # Portafolio de Juan Camargo
 
 Este repositorio contiene el código fuente de un portafolio diseñado en behance, copiado con informacion personal, utilizado como metodo de aprendizaje para desarrollar el fronten de una landing page con css y html.
+- [Behance](https://www.behance.net/gallery/90079519/Resume-Landing-page)
 
 ## Tecnologías Utilizadas
 
