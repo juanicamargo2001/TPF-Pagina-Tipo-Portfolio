@@ -3,6 +3,7 @@
     .menu-icon{
         display:none;
     }
+    
     .plan{
         width: 25%;
     }
@@ -11,18 +12,18 @@
 
 @media (max-width: 768px) {
     .img-sobre-mi {
-        display: none; /* Ocultar la sección de imagen */
+        display: none; 
     }
     
     .sobre-mi {
-        flex-direction: column; /* Cambiar a disposición vertical */
-        padding-left: 5vw; /* Ajustar padding */
-        padding-right: 5vw; /* Ajustar padding */
+        flex-direction: column; 
+        padding-left: 5vw; 
+        padding-right: 5vw; 
     }
     
     .main-sobre-mi {
-        padding: 5vh 10vw; /* Ajustar padding */
-        margin-left: 0; /* Eliminar el margen izquierdo */
+        padding: 5vh 10vw;
+        margin-left: 0; 
     }
 
     .servicios{
@@ -31,34 +32,34 @@
 
     
     .portfolio {
-        padding-left: 5vw; /* Ajusta el padding para pantallas pequeñas */
+        padding-left: 5vw; 
         padding-right: 5vw;
         padding-top: 10vh;
         padding-bottom: 5vh;
     }
 
     .contenedor-proyectos {
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .caja-proyecto {
-        width: 80%; /* Ajusta el ancho para ocupar más espacio en pantallas pequeñas */
-        margin: 10px 0; /* Ajusta el margen para mejor separación */
+        width: 80%; 
+        margin: 10px 0; 
     }
 
     .header-portfolio {
-        flex-direction: row; /* Cambia la dirección del flex a columna */
-        align-items: flex-start; /* Alinea los elementos al inicio */
-        text-align: left; /* Alinea el texto a la izquierda */
+        flex-direction: row; 
+        align-items: flex-start; 
+        text-align: left; 
     }
 
     .header-portfolio p {
-        margin-bottom: 10px; /* Agrega margen inferior para separación */
+        margin-bottom: 10px;
     }
 
     .header-portfolio select {
-        width: 100%; /* Ajusta el ancho del select para pantallas pequeñas */
+        width: 100%; 
     }
 
     .precios{
@@ -95,42 +96,42 @@
     }
 
     footer {
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        margin-left: 2vw; /* Reduce los márgenes */
+        flex-direction: column; 
+        margin-left: 2vw; 
         margin-right: 2vw;
         margin-top: 5vh;
         margin-bottom: 10vh;
     }
 
     .footer-contenido {
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        padding: 20px; /* Ajusta el padding para mayor comodidad */
-        align-items: flex-start; /* Alinea los elementos al inicio */
+        flex-direction: column; 
+        padding: 20px; 
+        align-items: flex-start;
     }
 
     .texto {
-        max-width: 100%; /* Ajusta el ancho del texto */
-        text-align: center; /* Centra el texto */
-        margin-bottom: 20px; /* Agrega margen inferior para separación */
+        max-width: 100%; 
+        text-align: center; 
+        margin-bottom: 20px; 
     }
 
     .footer-title {
-        font-size: 1.2em; /* Reduce el tamaño de la fuente */
+        font-size: 1.2em; 
     }
 
     .footer-text {
-        font-size: 0.9em; /* Reduce el tamaño de la fuente */
+        font-size: 0.9em;
     }
 
     .boton {
-        width: 100%; /* Ajusta el ancho del contenedor del botón */
-        justify-content: center; /* Centra el botón */
+        width: 100%; 
+        justify-content: center;
     }
 
     .footer-button {
-        width: 100%; /* Ajusta el ancho del botón */
-        padding: 10px; /* Reduce el padding */
-        font-size: 0.9em; /* Reduce el tamaño de la fuente */
+        width: 100%; 
+        padding: 10px; 
+        font-size: 0.9em; 
     }
     
 }
@@ -145,8 +146,6 @@
     .plan{
         width: 70%;
     }
-    
-
     
 }
 
