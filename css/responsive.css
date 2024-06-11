@@ -1,0 +1,156 @@
+
+@media(max-width:1024){
+    .menu-icon{
+        display:none;
+    }
+    .plan{
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .img-sobre-mi {
+        display: none; /* Ocultar la sección de imagen */
+    }
+    
+    .sobre-mi {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        padding-left: 5vw; /* Ajustar padding */
+        padding-right: 5vw; /* Ajustar padding */
+    }
+    
+    .main-sobre-mi {
+        padding: 5vh 10vw; /* Ajustar padding */
+        margin-left: 0; /* Eliminar el margen izquierdo */
+    }
+
+    .servicios{
+        padding: 15vh 0 5vh 0;
+    }
+
+    
+    .portfolio {
+        padding-left: 5vw; /* Ajusta el padding para pantallas pequeñas */
+        padding-right: 5vw;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+
+    .contenedor-proyectos {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .caja-proyecto {
+        width: 80%; /* Ajusta el ancho para ocupar más espacio en pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el margen para mejor separación */
+    }
+
+    .header-portfolio {
+        flex-direction: row; /* Cambia la dirección del flex a columna */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    .header-portfolio p {
+        margin-bottom: 10px; /* Agrega margen inferior para separación */
+    }
+
+    .header-portfolio select {
+        width: 100%; /* Ajusta el ancho del select para pantallas pequeñas */
+    }
+
+    .precios{
+        margin-top: 10vh;
+        padding: 10vh 0 5vh 0;
+    }
+    
+    
+
+}
+
+@media (max-width: 480px) {
+
+    .nav-bar {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .hero-image {
+        display:none;
+    }
+
+    .hero{
+        padding-top: 15vh;
+    }
+
+    .servicios{
+        padding: 10vh 0 5vh 0;
+    }
+
+    .plan{
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        margin-left: 2vw; /* Reduce los márgenes */
+        margin-right: 2vw;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    .footer-contenido {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        padding: 20px; /* Ajusta el padding para mayor comodidad */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .texto {
+        max-width: 100%; /* Ajusta el ancho del texto */
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Agrega margen inferior para separación */
+    }
+
+    .footer-title {
+        font-size: 1.2em; /* Reduce el tamaño de la fuente */
+    }
+
+    .footer-text {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente */
+    }
+
+    .boton {
+        width: 100%; /* Ajusta el ancho del contenedor del botón */
+        justify-content: center; /* Centra el botón */
+    }
+
+    .footer-button {
+        width: 100%; /* Ajusta el ancho del botón */
+        padding: 10px; /* Reduce el padding */
+        font-size: 0.9em; /* Reduce el tamaño de la fuente */
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .hero{
+        padding: 15vh 5vw 5vh 5vw;
+    }
+    .sobre-mi{
+        padding: 5vh 5vw;
+    }
+    .plan{
+        width: 70%;
+    }
+    
+
+    
+}
+
+
+
+
+
